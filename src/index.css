@@ -1,0 +1,109 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.navbar
+{
+  background-color: #fff !important;
+  margin-top: 5px;
+}
+
+.navbar-brand
+{
+  font-size: 2rem !important;
+  color:  orange !important;
+  margin-left: 20px;
+}
+
+
+.nav-link
+{
+  margin-left: 10px;
+}
+
+.menu_active
+{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+#header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#header h2{
+  font-size: 30px;
+}
+
+
+
+#header .btn-get-started
+{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transform: 0.5s;
+  color: orange;
+  border: 2px solid orange;
+  text-decoration: none;
+ 
+
+}
+
+#header .btn-get-started:hover
+{
+  
+ background-color: orange;
+ color: white;
+
+
+}
+
+.logo{
+  width: 70px;
+  height: 80px;
+}
+
+.cards-wrapper
+{
+  display: flex;
+}
+
+
+.table
+{
+  border: 1px solid black;
+  table-layout: fixed;
+}
+.table th {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.table tr {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.table td {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+
+
+
+
