@@ -1,22 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import img from "./images/elearn.jpg";
-import HorizontalLine from "./HorizontalLine";
-import img1 from "./images/img1.jpg"
-import img2 from "./images/img2.jpg"
-import img3 from "./images/img3.jpg"
-import CarouselCard from "./CarouselCard";
+import img1 from "./images/multimedia.jpg"
+import img2 from "./images/programming.jpg"
+import img3 from "./images/accounting.jpg"
+import Card from "./Card"
+
+
+import Footer from "./Footer"
 
 
 const Home=()=> 
 {
-    const data = [
-        { img: img3, title: "Computer Science & Engineering",desc:"KTU 2015 and 2019 schemes available" },
-        { img: img1 , title: "Electronics & Communication Engineering",desc:"KTU 2015 and 2019 schemes available" },
-        { img: img2, title: "Civil Engineering",desc:"KTU 2015 and 2019 schemes available" },
+    const courses = [
+        { img: img3, title: "Accounting",desc:"Tally with GST, Tally Prime, PeachTree, QuickBooks" },
+        { img: img1 , title: "Multimedia",desc:"Adobe Photoshop, Illustrator, CorelDraw, Adobe Flash, 3D Studio Max" },
+        { img: img2, title: "Programming",desc:"Python, Java, PHP, Web Development, C, C++, HTML, CSS, Javascript" },
        
         
     ]
+
 
     return (
         <>
@@ -43,46 +46,42 @@ const Home=()=>
         </div>
        </section>
 
-        <HorizontalLine color="orange"/>
-
-        {/* <section id="recommended" className="d-flex align-items-center">
+      
+       <section id="header" className="d-flex align-items-center">
+       
        <div className="container-fluid">
+     
          <div className="row"> 
             <div className="col-10 mx-auto">
-                <div className="row"> 
-                <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                    {
-                            data.map((val,ind)=>
-                            {
-                                return <CarouselCard key={ind}
-                                img={val.img}
-                                title={val.title}
-                                desc={val.desc}
-                                />
-                            })
-                    }
-                      
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                    </div>
-               
+            <h4 className="text-center my-3 mb-4">Trending Courses</h4>
+            <div className="row gy-3">  
+                {
+                courses.map((val,ind)=>
+                {
+                    return <Card key={ind}
+                    img={val.img}
+                    title={val.title}
+                    desc={val.desc}
+                    />
+                })
+            }
+                
+
                 </div>
             </div>
          </div>
         </div>
-       </section> */}
-       
+       </section>
 
-       
-   
+
+<section>
+<div className="container-fluid">
+
+<Footer></Footer>
+</div>
+
+</section>
+ 
 
         </>
     );

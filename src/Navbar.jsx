@@ -36,7 +36,7 @@ const Navbar=()=>
                         <NavLink  className="nav-link nav-teach" to="/teach">Teach on Piechart</NavLink>
                     </li> */}
                     <li className="nav-item">
-                        <NavLink  className="nav-link" to="/contact">Contact</NavLink>
+                        <NavLink  className="nav-link" to="/contact">Contact Us</NavLink>
                     </li>
                     </ul> 
                 </div>

@@ -3,17 +3,49 @@ import img1 from "./images/multimedia.jpg"
 import img2 from "./images/programming.jpg"
 import img3 from "./images/accounting.jpg"
 
-import Card from "./Card"
+import CoursesCard from "./CoursesCard"
 
 
 
 const Courses=()=> 
 {
     const data = [
-        { img: img3, title: "Accounting",desc:"Tally with GST, Tally Prime, PeachTree, QuickBooks" },
-        { img: img1 , title: "Multimedia",desc:"Adobe Photoshop, Illustrator, CorelDraw, Adobe Flash, 3D Studio Max" },
-        { img: img2, title: "Programming",desc:"Python, Java, PHP, Web Development, C, C++, HTML, CSS, Javascript" },
-       
+        {title: "Career Courses",
+        courses:
+        [
+            {
+              name:  "Corporate Finance" 
+            },
+            {
+                name:  "Corporate Finance" 
+              },
+        ],
+    
+    },
+    {title: "Certificate Courses",
+        courses:
+        [
+            {
+              name:  "Corporate Finance" 
+            },
+            {
+                name:  "Corporate Finance" 
+              },
+        ],
+    
+    },
+    {title: "Vacation Courses",
+        courses:
+        [
+            {
+              name:  "Corporate Finance" 
+            },
+            {
+                name:  "Corporate Finance" 
+              },
+        ],
+    
+    }
         
     ]
 
@@ -28,10 +60,10 @@ const Courses=()=>
                 {
                 data.map((val,ind)=>
                 {
-                    return <Card key={ind}
-                    img={val.img}
+                    return <CoursesCard key={ind}
+                  
                     title={val.title}
-                    desc={val.desc}
+                    courses={val.courses}
                     />
                 })
             }
